@@ -8,6 +8,10 @@ html {
   color: #ebebeb;
 }
 
+a {
+  color: rgb(225, 82, 225);
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -25,8 +29,9 @@ html {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  border: 10px solid rgb(90, 90, 90);
+  border: 2px solid rgb(163, 0, 163);
   object-fit: cover;
+  box-shadow: 0 0 40px rgba(244, 13, 244, 0.7);
 }
 
 #content {
@@ -58,11 +63,29 @@ html {
 #buttons a {
   background-color: rgb(60, 60, 60);
   border: 2px solid rgb(163, 0, 163);
+  /* box-shadow: 0 0 10px rgba(197, 22, 197, 0.7); */
   border-radius: 50px;
   color: #ebebeb;
   padding: 0.8rem 2rem;
   font-weight: bolder;
   text-decoration: none;
+  animation: glow 2s infinite;
+}
+
+#buttons a:hover {
+  transform: scale(1.02);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(163, 0, 163, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 11px rgba(163, 0, 163, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(163, 0, 163, 0.5);
+  }
 }
 
 #socials {
@@ -98,6 +121,7 @@ html {
   #image-section img {
     width: 200px;
     height: 200px;
+    box-shadow: 0 0 10px rgba(244, 13, 244, 0.7);
   }
 
   #content {
@@ -115,5 +139,17 @@ html {
 
   #buttons a {
     width: fit-content;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(163, 0, 163, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 6px rgba(163, 0, 163, 1);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(163, 0, 163, 0.5);
+    }
   }
 }
