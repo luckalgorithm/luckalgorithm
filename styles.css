@@ -72,7 +72,7 @@ a {
 }
 
 #buttons a:hover {
-  transform: scale(1.02);
+  background-color: rgb(65, 65, 65);
 }
 
 @keyframes glow {
