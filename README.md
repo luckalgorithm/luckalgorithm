@@ -1,3 +1,1 @@
-### Hello! I'm Andrew.
-
-I love building, destroying, and learning how things work.
+https://luckalgorithm.github.io/luckalgorithm/index.html
