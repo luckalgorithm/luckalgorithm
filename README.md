@@ -1,1 +1,1 @@
-[View portfolio](https://luckalgorithm.github.io/luckalgorithm/index.html)
+luckalgorithm.github.io
